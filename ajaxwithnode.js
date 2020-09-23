@@ -1,0 +1,11 @@
+req=require("request");
+req({uri:'https://restcountries.eu/rest/v2/all'
+,method:'get',data:'json'},function(err,data){
+	if(err){
+		console.log(err)
+	}
+	else{
+		var=data
+		console.log(var.[0])
+	}
+})
